@@ -1,0 +1,14 @@
+{
+  "name": "ai-video-gt",
+  "version": "1.0.0",
+  "description": "AI Video GT: list AI video and image models with exact credit prices, find free browser video tools, and (with an API key) generate AI videos with sound and AI images.",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "ai-video-gt": {
+      "httpUrl": "https://aivideogt.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${AIVIDEOGT_API_KEY}"
+      }
+    }
+  }
+}

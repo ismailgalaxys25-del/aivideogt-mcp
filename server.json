@@ -1,0 +1,43 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.aivideogt/ai-video-gt",
+  "title": "AI Video GT",
+  "description": "Make AI videos and images with your AI Video GT credits, check prices and find free video tools.",
+  "websiteUrl": "https://aivideogt.com/mcp-server",
+  "version": "1.0.0",
+  "icons": [
+    {
+      "src": "https://aivideogt.com/brand/logo-square-512.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://aivideogt.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional. Your AI Video GT Developer API key (Account > Developer API), needed to generate and to see your balance. Model, price and video tool lookups work without it.",
+          "value": "Bearer {api_key}",
+          "isRequired": false,
+          "isSecret": true,
+          "variables": {
+            "api_key": {
+              "description": "AI Video GT API key, starting with vgt_",
+              "isRequired": true,
+              "isSecret": true
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/ismailgalaxys25-del/aivideogt-mcp",
+    "source": "github"
+  }
+}
